@@ -35,6 +35,16 @@ a:focus-visible{outline:2px solid #0F766E;outline-offset:3px}
 .w{padding-left:max(20px,4vw,env(safe-area-inset-left,0px));padding-right:max(20px,4vw,env(safe-area-inset-right,0px))}
 @media (max-width:600px){.tl{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:760px){nav a:not(.btn){display:none}}
+
+.cform{display:flex;flex-direction:column;gap:14px;background:#13294A;border:1px solid #24395C;border-radius:16px;padding:28px}
+.frow{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.cform label{color:#E8ECF1;font-weight:600;font-size:15px}
+.cform input[type=text],.cform input[type=email],.cform textarea{font:inherit;font-size:16px;color:#0F2340;background:#FFFFFF;border:1px solid #5D6E89;border-radius:10px;padding:12px 14px;width:100%}
+.cform input:focus-visible,.cform textarea:focus-visible,.cform button:focus-visible{outline:2px solid #F2C56B;outline-offset:2px}
+.fcheck{display:flex;gap:10px;align-items:center;font-weight:500!important;color:#C3CBD6!important}
+.fcheck input{width:20px;height:20px}
+@media (max-width:600px){.f2{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -162,6 +172,7 @@ a:focus-visible{outline:2px solid #0F766E;outline-offset:3px}
 <div class="w" style="padding-top: 104px; padding-bottom: 104px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem"><div class="ey">In colleagues' words</div><h2 class="h2">65 recognitions from 40+ colleagues.</h2></div>
 <div class="qg"><blockquote style="margin: 0; border-top: 2px solid #0F2340; padding-top: 20px; display: flex; flex-direction: column; gap: 12px"><div class="ey" style="font-size: 12px">Training and enablement</div><p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.45; color: #0F2340">“I wanted to thank you for the time you spent with my team, it really opened up their eyes and energised the team. I would recommend every sales region to reach out to you for a session - your guidance, tips and lessons learned was really invaluable!”</p><cite style="font-style: normal; color: #5A6578; font-weight: 600">Director of Sales, Africa</cite></blockquote><blockquote style="margin: 0; border-top: 2px solid #0F2340; padding-top: 20px; display: flex; flex-direction: column; gap: 12px"><div class="ey" style="font-size: 12px">Cross-functional delivery</div><p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.45; color: #0F2340">“This is a foundational achievement that will directly fuel our sales and strategic planning moving forward. Thank you for making this complex, heavy lift look so seamless.”</p><cite style="font-style: normal; color: #5A6578; font-weight: 600">VP Sales, UK&amp;I</cite></blockquote><blockquote style="margin: 0; border-top: 2px solid #0F2340; padding-top: 20px; display: flex; flex-direction: column; gap: 12px"><div class="ey" style="font-size: 12px">Data-driven decisions</div><p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.45; color: #0F2340">“This should be the bare minimum when making these out of the blue business decisions. Well done Mike, thanks for sharing those insights, Ops strikes again!!”</p><cite style="font-style: normal; color: #5A6578; font-weight: 600">Director of Salesforce Operations</cite></blockquote><blockquote style="margin: 0; border-top: 2px solid #0F2340; padding-top: 20px; display: flex; flex-direction: column; gap: 12px"><div class="ey" style="font-size: 12px">Executive analytics</div><p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.45; color: #0F2340">“this rep dashboard will be a real game-changer”</p><cite style="font-style: normal; color: #5A6578; font-weight: 600">Managing Director, AU/NZ</cite></blockquote><blockquote style="margin: 0; border-top: 2px solid #0F2340; padding-top: 20px; display: flex; flex-direction: column; gap: 12px"><div class="ey" style="font-size: 12px">Persistence and service</div><p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.45; color: #0F2340">“The task was challenging but Michael kept pushing to get it right. He is always responsive and pleasant to work with and I can’t thank him enough for all of his hard work.”</p><cite style="font-style: normal; color: #5A6578; font-weight: 600">Executive Assistant to VP, SMB Sales</cite></blockquote></div>
+<div><a href="https://www.linkedin.com/in/michaelrdespres/details/recommendations/" class="btn" data-goatcounter-click="click-linkedin-recs" style="border: 1.5px solid #0F2340; color: #0F2340">Read executive recommendations on LinkedIn</a></div>
 </div>
 </section>
 
@@ -172,28 +183,87 @@ a:focus-visible{outline:2px solid #0F766E;outline-offset:3px}
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
 <span class="cred">B.A. Economics, University of South Florida</span><span class="cred">Lean Six Sigma Black Belt</span><span class="cred">Agile Leadership (SSGI)</span>
 </div>
-<div><a href="Michael-Despres-Resume.pdf" class="btn" style="background: #0F766E; color: #FFFFFF">Download résumé (PDF)</a></div>
+<div><a href="Michael-Despres-Resume.pdf" class="btn" data-goatcounter-click="download-resume" style="background: #0F766E; color: #FFFFFF">Download résumé (PDF)</a></div>
 </div>
 </section>
 
 <section id="contact" style="background: #0F2340">
-<div class="w g2" style="padding-top: 96px; padding-bottom: 96px">
+<div class="w g2" style="padding-top: 96px; padding-bottom: 96px; align-items: start">
 <div style="display: flex; flex-direction: column; gap: 16px">
 <h2 class="h2" style="color: #FFFFFF">If your revenue engine needs a builder, let's talk.</h2>
-<p style="margin: 0; color: #C3CBD6; font-size: 19px">Twenty minutes is enough to tell if I can help.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
-<a href="mailto:michael.despres@gmail.com" class="btn" style="background: #F2C56B; color: #0F2340">Email michael.despres@gmail.com</a>
-<div style="display: flex; gap: 12px; flex-wrap: wrap">
-<a href="https://www.linkedin.com/in/michaelrdespres" class="btn" style="border: 1.5px solid #5D6E89; color: #FFFFFF">LinkedIn</a>
-<a href="Michael-Despres-Resume.pdf" class="btn" style="border: 1.5px solid #5D6E89; color: #FFFFFF">Résumé (PDF)</a>
+<p style="margin: 0; color: #C3CBD6; font-size: 19px">Twenty minutes is enough to tell if I can help. Send a note and I'll reply within one business day.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px">
+<a href="mailto:michael.despres@gmail.com" class="btn" data-goatcounter-click="click-email" style="border: 1.5px solid #5D6E89; color: #FFFFFF">michael.despres@gmail.com</a>
+<a href="https://www.linkedin.com/in/michaelrdespres" class="btn" data-goatcounter-click="click-linkedin" style="border: 1.5px solid #5D6E89; color: #FFFFFF">LinkedIn</a>
+<a href="Michael-Despres-Resume.pdf" class="btn" data-goatcounter-click="download-resume" style="border: 1.5px solid #5D6E89; color: #FFFFFF">Résumé (PDF)</a>
 </div>
 </div>
+<form id="contact-form" class="cform" novalidate>
+<div class="frow">
+<label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required>
+</div>
+<div class="frow">
+<label for="cf-email">Work email</label><input id="cf-email" name="email" type="email" autocomplete="email" required>
+</div>
+<div class="f2">
+<div class="frow"><label for="cf-company">Company</label><input id="cf-company" name="company" type="text" autocomplete="organization"></div>
+<div class="frow"><label for="cf-title">Your role</label><input id="cf-title" name="your_role" type="text" autocomplete="organization-title" placeholder="e.g. Technical Recruiter"></div>
+</div>
+<div class="frow"><label for="cf-hiring">Role you're hiring for <span style="font-weight: 400; color: #98A3B3">(optional)</span></label><input id="cf-hiring" name="hiring_for" type="text" placeholder="e.g. Director, Revenue Operations"></div>
+<div class="frow"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" rows="4"></textarea></div>
+<label class="fcheck" for="cf-future"><input id="cf-future" name="ok_future_contact" type="checkbox" value="yes"> It's OK to contact me about future roles too</label>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px">
+<button type="submit" class="btn" style="background: #F2C56B; color: #0F2340; border: 0; cursor: pointer; align-self: flex-start">Send message</button>
+<p id="cf-status" role="status" aria-live="polite" style="margin: 0; color: #C3CBD6; min-height: 1.5em"></p>
+</form>
 </div>
 </section>
 
 
 <footer style="background: #0B1A30; color: #98A3B3; font-size: 14px"><div class="w" style="padding-top: 24px; padding-bottom: 24px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap"><span>© 2026 Michael Despres</span><span>Tampa Bay, FL</span></div></footer>
 </div>
+<script>
+/* Settings: paste your IDs here after signing up (see README). */
+var GOATCOUNTER_CODE = '';   /* e.g. 'mdespres84' from mdespres84.goatcounter.com */
+var FORMSPREE_ID = '';       /* e.g. 'xyzabcd' from formspree.io/f/xyzabcd */
+(function () {
+  var ref = null;
+  try { ref = new URLSearchParams(location.search).get('ref'); } catch (e) {}
+  if (GOATCOUNTER_CODE) {
+    var g = document.createElement('script');
+    g.async = true; g.src = 'https://gc.zgo.at/count.js';
+    g.setAttribute('data-goatcounter', 'https://' + GOATCOUNTER_CODE + '.goatcounter.com/count');
+    g.onload = function () {
+      if (ref && window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: 'ref-' + ref.toLowerCase().replace(/[^a-z0-9-]/g, ''), title: 'Visit from ' + ref, event: true });
+      }
+    };
+    document.head.appendChild(g);
+  }
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('cf-status');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = form.name.value.trim(), email = form.email.value.trim();
+    if (!name || !email || email.indexOf('@') < 1) { status.textContent = 'Please add your name and a valid email.'; return; }
+    var data = new FormData(form);
+    if (ref) data.append('ref', ref);
+    data.append('page', location.href);
+    if (!FORMSPREE_ID) {
+      var body = 'Name: ' + name + '\nCompany: ' + form.company.value + '\nRole: ' + form.your_role.value + '\nHiring for: ' + form.hiring_for.value + '\n\n' + form.message.value;
+      location.href = 'mailto:michael.despres@gmail.com?subject=' + encodeURIComponent('Hello from ' + name) + '&body=' + encodeURIComponent(body);
+      status.textContent = 'Opening your email app. If nothing happens, email michael.despres@gmail.com.';
+      return;
+    }
+    status.textContent = 'Sending…';
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (r.ok) { form.reset(); status.textContent = 'Thanks. Your message is in, and I\'ll reply within one business day.'; if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: 'contact-form-sent', event: true }); }
+        else { status.textContent = 'That didn\'t send. Please email michael.despres@gmail.com instead.'; }
+      })
+      .catch(function () { status.textContent = 'That didn\'t send. Please email michael.despres@gmail.com instead.'; });
+  });
+})();
+</script>
 </body>
 </html>
