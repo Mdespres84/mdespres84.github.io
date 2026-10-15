@@ -1,6 +1,6 @@
 # michaeldespres — personal site
 
-Static one-page site, live at https://mdespres84.github.io/MichaelDespres/ — GitHub Pages serves these files as they are.
+Static one-page site, live at https://mdespres84.github.io — GitHub Pages serves these files as they are.
 
 ## Files
 
