@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="Michael Despres">
+<meta property="og:image" content="https://mdespres84.github.io/headshot.jpg">
 <meta property="og:description" content="Platform product manager and revenue operations leader who builds the systems global sales teams scale on.">
 <title>Michael Despres</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -95,6 +96,8 @@ p { margin: 0; }
 
 /* Hero */
 .hero .wrap { padding-block: clamp(56px, 9vw, 112px) clamp(48px, 7vw, 88px); display: grid; gap: 40px; }
+.hero-id { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.headshot { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; flex: none; border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--rule); }
 .hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.75rem); line-height: 1.03; letter-spacing: -0.02em; max-width: 15ch; }
 .hero .lede { font-size: clamp(1.125rem, 1.6vw, 1.3125rem); max-width: 40rem; color: var(--body); }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -198,7 +201,10 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
 <main id="top">
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <div class="eyebrow">Platform Product Manager · Revenue Operations Leader</div>
+      <div class="hero-id">
+        <img class="headshot" src="headshot.jpg" alt="Michael Despres" width="112" height="112">
+        <div class="eyebrow">Platform Product Manager · Revenue Operations Leader</div>
+      </div>
       <h1 id="hero-title">I build the systems global sales teams scale on.</h1>
       <p class="lede">Territory design, revenue systems, and AI automation for B2B SaaS. I turn manual, error-prone processes into governed systems, and I'm the person senior sales leaders call when something breaks.</p>
       <div class="actions">

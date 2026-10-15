@@ -26,7 +26,7 @@ Static one-page site, live at https://mdespres84.github.io — GitHub Pages serv
 
 ## Adding the headshot later
 
-Upload the photo as `headshot.jpg`, then in `index.html` add this line inside the
+The headshot lives in `headshot.jpg`; replace that file (same name) to swap the photo.
 hero, right above the `<h1>`:
 
 ```html
