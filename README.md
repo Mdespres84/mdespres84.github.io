@@ -9,14 +9,6 @@ Static one-page site, live at https://mdespres84.github.io. GitHub Pages serves 
 - `headshot.jpg` — the headshot; replace it with a file of the same name to swap the photo
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
-## Turn on visitor stats (GoatCounter, free)
-
-1. Sign up at https://www.goatcounter.com/signup and pick a code, for example `mdespres84`.
-2. In `index.html`, near the bottom, set `GOATCOUNTER_CODE = 'mdespres84';` and commit.
-3. Your dashboard is at https://mdespres84.goatcounter.com. It shows visits, referrers (LinkedIn, Google, email), country, device, and these click events: `download-resume`, `click-email`, `click-linkedin`, `click-linkedin-recs`, `contact-form-sent`.
-
-GoatCounter doesn't store IP addresses or set cookies, so no cookie banner is needed.
-
 ## Know which company looked: tracked links
 
 When you send the site to a specific company, add `?ref=` and a short name:
@@ -24,7 +16,7 @@ When you send the site to a specific company, add `?ref=` and a short name:
 - `https://mdespres84.github.io/?ref=tekmetric`
 - `https://mdespres84.github.io/?ref=highlevel`
 
-Each visit through that link shows in GoatCounter as an event named `ref-tekmetric`, and a contact-form message sent from it carries the `ref` too.
+A contact-form message sent from that link carries the `ref`, so you know which company it came from.
 
 ## Turn on the contact form (Formspree, free: 50 messages/month)
 
